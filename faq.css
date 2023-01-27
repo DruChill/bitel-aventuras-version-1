@@ -1,0 +1,161 @@
+
+/* 1-height: altura
+   2-width: ancho */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #212121;
+}
+
+.container {
+    /* max-width: 1400px; */
+}
+
+header .logo {
+    padding: 25px 30px;
+    height: 50px;
+    width: 50px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header a {
+    color: #AAAAAA;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+header a:hover {
+    color: #FFFFFF;
+}
+
+
+h1 {
+    color: whitesmoke;
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 5px 30px;
+    text-align: start;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li {
+    margin-top: 8px;
+    margin-right: 10px;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+
+footer {
+    background-color: #030303;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+footer h3 {
+    color: #AAAAAA;
+    font-size: medium;
+}
+
+.social-net {
+    margin-top: 25px;
+}
+
+i {
+    font-size: 18px;
+    margin: 0 8px;
+    color: #AAAAAA;
+}
+
+i:hover {
+    color: #FFFFFF;
+}
+
+
+@media (min-width: 720px){
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 20px;
+
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 80px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        margin: 10px 150px 50px;
+    }
+
+    ul {
+        text-align: start;
+        margin-left: 150px;
+        margin-right: 250px;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .social-net {
+        margin: 0;
+    }
+
+}
